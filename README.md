@@ -90,11 +90,10 @@ The released data contain flight-parameter time series and do not involve human 
 If you use this dataset, please cite the corresponding paper:
 
 ```bibtex
-@article{your_paper_key,
-  title   = {Your Paper Title},
-  author  = {Author Names},
+@article{Cau2026prefli,
+  title   = {Causality-guided flight-parameter prediction under changing atmospheric conditions},
   journal = {Communications Engineering},
-  year    = {Year}
+  year    = {2026}
 }
 ```
 
