@@ -32,14 +32,14 @@ The rows are chronologically ordered by `Time`.
 
 | Column | Physical meaning | Symbol | Description |
 |---|---|---|---|
-| `Time` | Time | \(t\) | Timestamp index. The sampling interval is 1 second. |
-| `Sideslip_Angle` | Sideslip angle | \(\beta\) | Angle related to lateral airflow and aircraft heading deviation, commonly used to characterize crosswind- or sideslip-induced lateral dynamics. |
-| `Longitudinal_Load_Factor` | Longitudinal load factor | \(n_x\) | Load factor along the longitudinal body-axis direction. |
-| `Normal_Load_Factor` | Normal load factor | \(n_z\) | Load factor along the normal or vertical body-axis direction, reflecting vertical dynamic response. |
-| `Lateral_Load_Factor` | Lateral load factor | \(n_y\) | Load factor along the lateral body-axis direction, reflecting side-force or lateral disturbance effects. |
-| `Pitch_Rate` | Pitch rate | \(q\) | Angular velocity around the aircraft lateral axis, describing pitch motion. |
-| `Roll_Rate` | Roll rate | \(p\) | Angular velocity around the aircraft longitudinal axis, describing roll motion. |
-| `Yaw_Rate` | Yaw rate | \(r\) | Angular velocity around the aircraft vertical axis, describing yaw motion. |
+| `Time` | Time | $t$ | Timestamp index. The sampling interval is 1 second. |
+| `Sideslip_Angle` | Sideslip angle | $\beta$ | Angle related to lateral airflow and aircraft heading deviation, commonly used to characterize crosswind- or sideslip-induced lateral dynamics. |
+| `Longitudinal_Load_Factor` | Longitudinal load factor | $n_x$ | Load factor along the longitudinal body-axis direction. |
+| `Normal_Load_Factor` | Normal load factor | $n_z$ | Load factor along the normal or vertical body-axis direction, reflecting vertical dynamic response. |
+| `Lateral_Load_Factor` | Lateral load factor | $n_y$ | Load factor along the lateral body-axis direction, reflecting side-force or lateral disturbance effects. |
+| `Pitch_Rate` | Pitch rate | $q$ | Angular velocity around the aircraft lateral axis, describing pitch motion. |
+| `Roll_Rate` | Roll rate | $p$ | Angular velocity around the aircraft longitudinal axis, describing roll motion. |
+| `Yaw_Rate` | Yaw rate | $r$ | Angular velocity around the aircraft vertical axis, describing yaw motion. |
 
 The released variables are key flight-dynamics responses associated with six-degree-of-freedom aircraft motion. In a standard six-degree-of-freedom formulation, aircraft motion consists of three translational degrees of freedom and three rotational degrees of freedom. The variables in this dataset capture important lateral, longitudinal, vertical, and angular-rate responses that are relevant to flight-parameter prediction under changing atmospheric conditions.
 
@@ -47,20 +47,20 @@ The released variables are key flight-dynamics responses associated with six-deg
 
 Aircraft six-degree-of-freedom motion is typically described in a body-fixed coordinate system:
 
-- The \(X\)-axis points forward along the fuselage.
-- The \(Y\)-axis points toward the right wing.
-- The \(Z\)-axis points downward.
+- The $X$-axis points forward along the fuselage.
+- The $Y$-axis points toward the right wing.
+- The $Z$-axis points downward.
 
 The six basic degrees of freedom include:
 
 | Type | Motion direction | Position or attitude variable | Velocity or angular-rate variable |
 |---|---|---|---|
-| Translation | Forward/backward | \(x\) | \(u\), forward velocity |
-| Translation | Left/right | \(y\) | \(v\), lateral velocity |
-| Translation | Up/down | \(z\), or altitude \(h\) | \(w\), vertical velocity |
-| Rotation | Roll | \(\phi\), roll angle | \(p\), roll rate |
-| Rotation | Pitch | \(\theta\), pitch angle | \(q\), pitch rate |
-| Rotation | Yaw | \(\psi\), yaw angle | \(r\), yaw rate |
+| Translation | Forward/backward | $x$ | $u$, forward velocity |
+| Translation | Left/right | $y$ | $v$, lateral velocity |
+| Translation | Up/down | $z$, or altitude $h$ | $w$, vertical velocity |
+| Rotation | Roll | $\phi$, roll angle | $p$, roll rate |
+| Rotation | Pitch | $\theta$, pitch angle | $q$, pitch rate |
+| Rotation | Yaw | $\psi$, yaw angle | $r$, yaw rate |
 
 The present dataset provides a subset of flight-dynamics variables closely related to this six-degree-of-freedom framework, including sideslip angle, load factors, and body-axis angular rates.
 
